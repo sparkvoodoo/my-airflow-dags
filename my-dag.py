@@ -1,6 +1,7 @@
 
 import time
 from datetime import datetime, timedelta
+from airflow.utils.dates import days_ago
 import json
 import requests
 from requests.auth import  AuthBase
