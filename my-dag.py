@@ -103,7 +103,7 @@ dag = DAG(
 t1 = PythonOperator(
     task_id='pull_source',
     python_callable=pull_source_sync,
-    op_kwargs={base_url: url, auth_token: token, source_id: 501},
+    op_kwargs={'base_url': url, 'auth_token': token, 'source_id': 501},
     dag=dag,
 )
 
